@@ -1,69 +1,125 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>האתר הראשון שלי</title>
+    <title>המלצות לטיולים בטבע</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: center;
-            background: #f5f5f5;
+            background: #f0f7f4;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #4a90e2;
+            background: #2e8b57;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
         }
 
-        section {
-            padding: 30px;
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            margin-top: 40px;
+            color: #2e8b57;
+            border-bottom: 2px solid #2e8b57;
+            padding-bottom: 5px;
         }
 
         .card {
             background: white;
-            width: 300px;
-            margin: 20px auto;
-            padding: 20px;
+            padding: 15px;
+            margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 0 10px #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        button {
-            background: #4a90e2;
+        .card h3 {
+            margin: 0;
+            color: #1f5f3d;
+        }
+
+        .card p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2e8b57;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #357ABD;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>ברוך הבא לאתר הראשון שלי</h1>
-    <p>זה אתר שבניתי בעצמי!</p>
+    המלצות לטיולים בטבע
 </header>
 
-<section>
+<div class="container">
+
+    <div class="section-title">תצפיות מומלצות</div>
+
     <div class="card">
-        <h2>קצת עליי</h2>
-        <p>שלום! אני יעקב, ואני מתחיל ללמוד בניית אתרים.</p>
-        <button onclick="alert('איזה כיף! לחצת על הכפתור הראשון שלך')">
-            לחץ עליי
-        </button>
+        <h3>מצפה אופיר – אילת</h3>
+        <p>תצפית מדהימה על הרי אדום, מפרץ אילת והמדבר הפתוח. מתאים לכל הגילאים.</p>
+        <p><strong>איך מגיעים:</strong> נסיעה קצרה מאילת לכיוון כביש 12.</p>
     </div>
-</section>
+
+    <div class="card">
+        <h3>הר צפחות</h3>
+        <p>תצפית גבוהה עם נוף עוצר נשימה. מסלול קצר אך תלול.</p>
+        <p><strong>רמת קושי:</strong> בינונית.</p>
+    </div>
+
+    <div class="section-title">מעיינות ומקומות מים</div>
+
+    <div class="card">
+        <h3>עין מבוע – נחל פרת</h3>
+        <p>מעיין גדול ויפה, מים קרים, מקום מושלם לפיקניק.</p>
+        <p><strong>רמת קושי:</strong> קל–בינוני.</p>
+    </div>
+
+    <div class="card">
+        <h3>עין לימון – הרי ירושלים</h3>
+        <p>מעיין קטן ופסטורלי, מתאים למשפחות.</p>
+        <p><strong>איך מגיעים:</strong> ליד עין כרם.</p>
+    </div>
+
+    <div class="section-title">מסלולים מומלצים</div>
+
+    <div class="card">
+        <h3>נחל כזיב</h3>
+        <p>מסלול מים מהמם בגליל המערבי. עובר ליד עין טמיר.</p>
+        <p><strong>רמת קושי:</strong> בינוני.</p>
+    </div>
+
+    <div class="card">
+        <h3>הר ארבל</h3>
+        <p>מסלול עם תצפיות מרהיבות על הכנרת והגליל.</p>
+        <p><strong>רמת קושי:</strong> בינוני–קשה.</p>
+    </div>
+
+</div>
+
+<footer>
+    © יעקב – המלצות לטבע
+</footer>
 
 </body>
 </html>
+
